@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>It's All About Motorcycle</title>
+		<link rel="shortcut icon" href="images/favicon3.png" type="image/x-icon">
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="plugins/flexslider.css">
+
+		
+</head>
+<body>
+	<div class="container">
+	<!--Row 1-->
+		<div class="row">
+		<div class="col-md-12">
+			<h1>It's All About Motorcycle</h1>
+			<h5>
+				<em class="text-muted">
+					Seputar Dunia Motor
+				</em>
+			</h5>
+			<ul class="nav nav-tabs nav-justified">
+  					<li role="presentation"><a href="index.html">Home</a></li>
+  					<li role="presentation"><a href="ducati.html">Ducati</a></li>
+  					<li role="presentation" class="active"><a href="bmw.html">BMW</a></li>
+  					<li role="presentation"><a href="piaggio.html">Piaggio</a></li>
+  					<li role="presentation"><a href="tips.html">Tips</a></li>
+  					<li role="presentation"><a href="contact.html">Contact Us</a></li>
+  					<li role="presentation"><a href="about.html">About Us</a></li>
+			</ul>
+			<div class="flexslider">
+				<ul class="slides">
+		 			<li>
+						<img src="images/1.jpg">
+		 			</li>
+		 			<li>
+		 				<img src="images/2.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/3.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/4.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/5.jpg">
+		 			</li>
+				</ul>
+			</div>
+			<div class="input-group">
+			<input type="text" class="form-control" aria-label="...">
+      		<div class="input-group-btn">
+        		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search </button>
+        			<ul class="dropdown-menu dropdown-menu-right">
+          				<li><a href="http://www.google.co.id">Google Search</a></li>
+        			</ul>
+      		</div>
+      		</div>
+		</div>
+		</div>	
+	</div>
+
+	<!-- Row 2-->
+      <div id="content">
+        <!-- Buat mas fadhil kautsar -->
+        	<p>Ini page BMW<br/>Isiin berita tentang motor BMW.Ga usah bahas harga.Postingan harus urut berdasarkan tanggal berita itu di posting.<strong>JANGAN LUPA SELALU CANTUMKAN SUMBER DI MANA KALIAN MENG-COPY BERITA</strong></p>
+			<br/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br/><br/>
+			sumber <a href="http://alamatweb.co.id">http://alamatweb.co.id</a></p>
+		</div>
+
+
+	<footer align="center">
+		Copyright &copy; 2016. Admin. All Right Reserved
+	</footer>
+</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="plugins/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="plugins/jquery.flexslider.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+ 
+    // more complex call
+    $('.flexslider').flexslider({
+         animation: "fade",
+         easing: "swing",
+         controlNav: false, 
+         controlsContainer: ".flex-container",
+         start: function(slider) {
+           $('.total-slides').text(slider.count);
+         },
+         after: function(slider) {
+           $('.current-slide').text(slider.currentSlide);
+         }
+    });
+  });
+</script>
+	</body>
+</html>

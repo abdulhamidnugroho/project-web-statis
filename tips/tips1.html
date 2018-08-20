@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>It's All About Motorcycle</title>
+		<link rel="shortcut icon" href="images/favicon3.png" type="image/x-icon">
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="plugins/flexslider.css">
+
+		
+</head>
+<body>
+	<div class="container">
+	<!--Row 1-->
+		<div class="row">
+		<div class="col-md-12">
+			<h1>It's All About Motorcycle</h1>
+			<h5>
+				<em class="text-muted">
+					Seputar Dunia Motor
+				</em>
+			</h5>
+			<ul class="nav nav-tabs nav-justified">
+  					<li role="presentation"><a href="index.html">Home</a></li>
+  					<li role="presentation"><a href="ducati.html">Ducati</a></li>
+  					<li role="presentation"><a href="bmw.html">BMW</a></li>
+  					<li role="presentation"><a href="piaggio.html">Piaggio</a></li>
+  					<li role="presentation" class="active"><a href="tips.html">Tips</a></li>
+  					<li role="presentation"><a href="contact.html">Contact Us</a></li>
+  					<li role="presentation"><a href="about.html">About Us</a></li>
+			</ul>
+			<div class="flexslider">
+				<ul class="slides">
+		 			<li>
+						<img src="images/q.jpg">
+		 			</li>
+		 			<li>
+		 				<img src="images/w.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/e.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/r.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/t.jpg">
+		 			</li>
+		 			<li>
+						<img src="images/y.jpg">
+		 			</li>
+				</ul>
+			</div>
+			<div class="input-group">
+			<input type="text" class="form-control" aria-label="...">
+      		<div class="input-group-btn">
+        		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search </button>
+        			<ul class="dropdown-menu dropdown-menu-right">
+          				<li><a href="http://www.google.co.id">Google Search</a></li>
+        			</ul>
+      		</div>
+      		</div>
+		</div>
+		</div>	
+	</div>
+
+	<!-- Row 2-->
+    <div id="content">
+    	<div class="row">        
+    		<div class="artikel">
+            <h2>Tiga Faktor Dibalik Keunggulan Pertalite</h2>
+            <p>
+              <b>Jakarta</b> - Dalam acara Pertalite Beat OTOMOTIF Record yang diselenggarakan di SPBU Pertamina MT Haryono, Jaksel Sabtu lalu (19/11), terpapar data-data menarik mengenai keunggulan Pertalite yang diterangkan oleh Tri Yuswidjajanto Zaenuri dari LAPI ITB (Institut Teknologi Bandung). Sebelum mengulas keunggulan Pertalite, apa sih latar belakang Pertamina memasarkan bahan bakar ini?
+
+              Menurut Danang Widya Surya, Ast. Manager Marketing Communication PT Pertamina (Persero), hal ini didasarkan pada kondisi pasar yang mayoritas didominasi kendaraan berasio kompresi 9-10:1.
+
+              “Premium beroktan 88 cocoknya untuk mesin berkompresi di bawah 9:1, sedang Pertamax dengan oktan 92 untuk kompresi 10-11:1, sehingga untuk kendaraan dengan kompresi 9-10:1 belum ada, maka Pertamina meluncurkan Pertalite dengan oktan 90 untuk mengisi pasar itu,” terang Danang.
+              <br>
+              <b>Performa dan Efisiensi Tinggi</b>
+            
+              Menurut Yus, sapaan Tri Yuswidjajanto, bahan bakar yang baik harus dapat memenuhi tiga faktor. Yang pertama adalah fuel economy yang baik dan kedua memenuhi kebutuhan performa. Sedang yang ketiga adalah durability, termasuk di dalamnya adalah kemampuan memenuhi kebutuhan standar emisi gas buang dan deposit sisa pembakaran.
+            </p>
+          </div>
+       </div>
+	</div>
+
+
+	<footer align="center">
+		Copyright &copy; 2016. Admin. All Right Reserved
+	</footer>
+</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="plugins/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="plugins/jquery.flexslider.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+ 
+    // more complex call
+    $('.flexslider').flexslider({
+         animation: "fade",
+         easing: "swing",
+         controlNav: false, 
+         controlsContainer: ".flex-container",
+         start: function(slider) {
+           $('.total-slides').text(slider.count);
+         },
+         after: function(slider) {
+           $('.current-slide').text(slider.currentSlide);
+         }
+    });
+  });
+</script>
+	</body>
+</html>
